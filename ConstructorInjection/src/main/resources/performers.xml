@@ -5,4 +5,11 @@
 	<bean id="Pyare Mohan" class=" com.zensar.spring.performer.Juggler">
 	<constructor-arg value="12"></constructor-arg>
 	</bean>
+	<bean id="Twinkle Twinkle" class=" com.zensar.spring.poems.TwinkleTwinkle">
+	</bean>
+	<bean id="Katrina Kaif" class="com.zensar.spring.performer.PoeticJuggler">
+	<constructor-arg value="2"></constructor-arg>
+	<constructor-arg ref="Twinkle Twinkle"></constructor-arg>
+	</bean>
+	
 </beans>
