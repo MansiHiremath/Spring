@@ -14,7 +14,7 @@ import com.zensar.services.UserService;
 public class UserController {
 @Autowired
 private UserService userService;
-@GetMapping("login")
+@PostMapping("login")
 public String checkLogin(User user,ModelMap map) {
 	if(userService.validateUser(user))
 	{
